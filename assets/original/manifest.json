@@ -1,0 +1,77 @@
+{
+  "source_notebook": "Interview_ML_PPZ_2026.ipynb",
+  "figures": [
+    {
+      "cell": 25,
+      "figure": 1,
+      "path": "assets/original/cell-25-figure-1.png",
+      "caption": "Class distribution"
+    },
+    {
+      "cell": 28,
+      "figure": 1,
+      "path": "assets/original/cell-28-figure-1.png",
+      "caption": "Feature distributions"
+    },
+    {
+      "cell": 31,
+      "figure": 1,
+      "path": "assets/original/cell-31-figure-1.png",
+      "caption": "Entropy versus output count"
+    },
+    {
+      "cell": 34,
+      "figure": 1,
+      "path": "assets/original/cell-34-figure-1.png",
+      "caption": "Feature correlations"
+    },
+    {
+      "cell": 47,
+      "figure": 1,
+      "path": "assets/original/cell-47-figure-1.png",
+      "caption": "Normalised confusion matrix"
+    },
+    {
+      "cell": 48,
+      "figure": 1,
+      "path": "assets/original/cell-48-figure-1.png",
+      "caption": "One-vs-rest ROC curves"
+    },
+    {
+      "cell": 52,
+      "figure": 1,
+      "path": "assets/original/cell-52-figure-1.png",
+      "caption": "Global SHAP importance"
+    },
+    {
+      "cell": 54,
+      "figure": 1,
+      "path": "assets/original/cell-54-figure-1.png",
+      "caption": "SHAP: Bitcoin Fog"
+    },
+    {
+      "cell": 54,
+      "figure": 2,
+      "path": "assets/original/cell-54-figure-2.png",
+      "caption": "SHAP: JoinMarket"
+    },
+    {
+      "cell": 54,
+      "figure": 3,
+      "path": "assets/original/cell-54-figure-3.png",
+      "caption": "SHAP: SamouraiWallet.com"
+    },
+    {
+      "cell": 54,
+      "figure": 4,
+      "path": "assets/original/cell-54-figure-4.png",
+      "caption": "SHAP: WasabiWallet.io"
+    },
+    {
+      "cell": 54,
+      "figure": 5,
+      "path": "assets/original/cell-54-figure-5.png",
+      "caption": "SHAP: other"
+    }
+  ]
+}

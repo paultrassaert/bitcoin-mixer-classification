@@ -12,6 +12,70 @@ The original feature extraction covered 32,682 training, 16,176 labelled test an
 
 The later notebook reported **macro-F1 approximately 0.95** and mean one-vs-rest ROC-AUC **0.9981** on 6,537 examples drawn from the training file. **That same internal holdout was used for early stopping**, and the notebook describes iterative experimentation. These are model-selection diagnostics, not an untouched test result. Although `final_test` was extracted, it was never evaluated by the supplied notebook. The raw feature files are unavailable in this repository, so those reported scores have not been independently reproduced.
 
+## Original figures and analysis
+
+Read [the complete original analysis](docs/original-analysis.md) for the development choices, interpretations and conclusions, with all saved charts in notebook order. The captions below refer to the original experiment; current methodological qualifications are recorded in [AUDIT.md](AUDIT.md).
+
+### Transaction patterns
+
+The study compares class imbalance, transaction topology, output-value entropy and script-related features. The majority class represents about 85.2% of the training set, motivating macro-F1 and per-class diagnostics. The original “Market Share” label is a dataset proportion, not a market estimate.
+
+![Class distribution](assets/original/cell-25-figure-1.png)
+
+*Class distribution — original saved notebook output.*
+
+![Feature distributions](assets/original/cell-28-figure-1.png)
+
+*Feature distributions — original saved notebook output.*
+
+![Entropy versus output count](assets/original/cell-31-figure-1.png)
+
+*Entropy versus output count — original saved notebook output.*
+
+![Feature correlations](assets/original/cell-34-figure-1.png)
+
+*Feature correlations — original saved notebook output.*
+
+### Classification diagnostics
+
+The confusion matrix and ROC curves come from the internal development holdout used for early stopping. They show where classes overlap, especially Wasabi versus other, but do not measure performance on an untouched test set.
+
+![Normalised confusion matrix](assets/original/cell-47-figure-1.png)
+
+*Normalised confusion matrix — original saved notebook output.*
+
+![One-vs-rest ROC curves](assets/original/cell-48-figure-1.png)
+
+*One-vs-rest ROC curves — original saved notebook output.*
+
+### Model explanations
+
+Global and class-specific SHAP plots describe feature contributions to model outputs. They help explain learned patterns; they do not prove why a service implemented a protocol or identify illegal activity.
+
+![Global SHAP importance](assets/original/cell-52-figure-1.png)
+
+*Global SHAP importance — original saved notebook output.*
+
+![SHAP: Bitcoin Fog](assets/original/cell-54-figure-1.png)
+
+*SHAP: Bitcoin Fog — original saved notebook output.*
+
+![SHAP: JoinMarket](assets/original/cell-54-figure-2.png)
+
+*SHAP: JoinMarket — original saved notebook output.*
+
+![SHAP: SamouraiWallet.com](assets/original/cell-54-figure-3.png)
+
+*SHAP: SamouraiWallet.com — original saved notebook output.*
+
+![SHAP: WasabiWallet.io](assets/original/cell-54-figure-4.png)
+
+*SHAP: WasabiWallet.io — original saved notebook output.*
+
+![SHAP: other](assets/original/cell-54-figure-5.png)
+
+*SHAP: other — original saved notebook output.*
+
 ## Run
 
 Python 3.11+:
